@@ -11,15 +11,14 @@
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 5em;
+    padding-top: 10em;
 }
 
 .container {
     min-height: 60%;
     max-width: 50%;
-    background-color: rgba(0, 0, 0, 0.4); /* change to transparent */
+    background-color: rgba(0, 0, 0, 0.5); /* change to transparent */
     margin: auto;
-    margin-top: 8em;
     padding-top: 2em;
     text-align: center;
     border-radius: 20px;
@@ -27,7 +26,6 @@
 }
 
 .heading {
-    margin-bottom: 2em;
     font-size: 2rem;
     font-weight: 900;
     color: whitesmoke;
@@ -41,8 +39,7 @@
     max-width:50%;
     margin: auto;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 1em auto;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 20px;
