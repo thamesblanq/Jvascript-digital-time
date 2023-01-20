@@ -11,11 +11,21 @@ function startTimer() {
 
 setInterval(changeWall, 5000);
 
-function changeWall () {
-    let body = document.querySelector('wall');
+
+
+/* function changeWall () {
+    let body = document.getElementById('#wall');
     const pictures = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.png", "6.png"];
     // created a for loop to loop through the picture array
     for (let i = 0; i < pictures.length; i++) {
     body.style.backgroundImage = pictures[i];// i didn't do something right-- maybe js cant read the images like this
     }
+} */
+
+/* let total = 0, count = 1;
+while (count <= 10) {
+total += count;
+count ++;
 }
+console.log(total);
+// → 55 */
