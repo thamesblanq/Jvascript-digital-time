@@ -15,7 +15,7 @@
 }
 
 .container {
-    min-height: 60%;
+    height: 300px;
     max-width: 50%;
     background-color: rgba(0, 0, 0, 0.5); /* change to transparent */
     margin: auto;
