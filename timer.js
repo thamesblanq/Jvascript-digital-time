@@ -46,7 +46,7 @@ function startTimer() {
 
  let wallPaper = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.png", "6.png", "7.jpg", "8.jpg", "9.jpg", "10.jpg"]; //array for images
  let cover = document.querySelector(".outer-cover"); // linking the html and js.
- //console.log(wallPaper.length);// works
+ //console.log();// works
 
  function changeWall() {
     let random = Math.floor(Math.random() * wallPaper.length);// works fine..........
