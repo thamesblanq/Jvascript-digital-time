@@ -44,16 +44,25 @@ function startTimer() {
 
 //setInterval(changeWall, 5000);
 
+ let wallPaper = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.png", "6.png", "7.jpg", "8.jpg", "9.jpg", "10.jpg"]; //array for images
+ let cover = document.querySelector(".outer-cover"); // linking the html and js.
+ //console.log(wallPaper.length);// works
+
+ function changeWall() {
+    let random = Math.floor(Math.random() * wallPaper.length);// works fine..........
+
+    console.log(random);//works
+    cover.style.backgroundImage = wallPaper[random]; // not working...........      
+} 
 
 
-/* function changeWall () {
-    let body = document.getElementById('#wall');
-    const pictures = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.png", "6.png"];
-    // created a for loop to loop through the picture array
-    for (let i = 0; i < pictures.length; i++) {
-    body.style.backgroundImage = pictures[i];// i didn't do something right-- maybe js cant read the images like this
-    }
-} */
+
+/* function getRandomNumber () {
+    return Math.floor(Math.random() * wallPaper.length);
+} //not working............
+ */
+
+ 
 
 /* let total = 0, count = 1;
 while (count <= 10) {
