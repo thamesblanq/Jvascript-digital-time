@@ -5,26 +5,29 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.outer-cover {
-    height: 100vh;
-    width: 100%;
+body {
     background-image: url(background.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 10em;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
 }
 
-.container {
+section {
     height: 300px;
-    max-width: 50%;
-    background-color: rgba(0, 0, 0, 0.5); /* change to transparent */
-    margin: auto;
-    padding-top: 2em;
-    text-align: center;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.786);
     border-radius: 20px;
-    box-shadow: 0 0 4px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
 .heading {
     font-size: 2rem;
     font-weight: 900;
@@ -38,6 +41,7 @@
     padding: 1.5em 2em;
     max-width:50%;
     margin: auto;
+    border: 1px solid white;
     text-align: center;
     margin: 1em auto;
     overflow: hidden;
@@ -49,6 +53,7 @@
 
 #demo:hover {
     background-color: whitesmoke;
+    border: 1px solid black;
     color: black;
     cursor: pointer;
 }

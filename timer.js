@@ -42,32 +42,18 @@ function startTimer() {
 
 //trying to change wallpaper after five seconds: seems like i need to run through the array 
 
-//setInterval(changeWall, 5000);
 
- let wallPaper = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.png", "6.png", "7.jpg", "8.jpg", "9.jpg", "10.jpg"]; //array for images
- let cover = document.querySelector(".outer-cover"); // linking the html and js.
+
+ let wallPaper = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.png", "6.png", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "background.jpg"]; //array for images
+ let cover = document.querySelector("body"); // linking the html and js.
  //console.log();// works
 
  function changeWall() {
-    let random = Math.floor(Math.random() * wallPaper.length);// works fine..........
+    let random = Math.floor(Math.random() * wallPaper.length);
 
-    console.log(random);//works
-    cover.style.backgroundImage = wallPaper[random]; // not working...........      
+    console.log(random);
+    cover.style.backgroundImage = `url(${wallPaper[random]})`;      
 } 
+setInterval(changeWall, 5000);
 
 
-
-/* function getRandomNumber () {
-    return Math.floor(Math.random() * wallPaper.length);
-} //not working............
- */
-
- 
-
-/* let total = 0, count = 1;
-while (count <= 10) {
-total += count;
-count ++;
-}
-console.log(total);
-// → 55 */
